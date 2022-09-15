@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Quicksand&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Open+Sans:wght@300;500&family=Quicksand:wght@300&display=swap" rel="stylesheet">     
     <title>The lair</title>
     <meta name="description" content="Martin's personal website">
 </head>
@@ -17,9 +17,9 @@
             <div class="nav-container container">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">DEV</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#dev">DEVELOPMENT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
                     <h1>MARTIN <br> POSPISIL</h1>
                     <p>Welcome to my website. This project represents some skills I've learned during my learning path. Feel free to scroll down for more content.</p>
                     <div class="scroll-arrows">
-                        <a href="#">
+                        <a href="#about">
                             <img class="a1" src="./img/arrow-down.png"/>
                             <img class="a2" src="./img/arrow-down.png"/>
                             <img class="a3" src="./img/arrow-down.png"/>
@@ -43,13 +43,13 @@
                 </div>
             </div>
         </div>
-        <div class="about-section">
+        <div id="about" class="about-section">
             <div class="about-container container">
                 <h2>About me</h2>
                 <div class="about">
-                    <p>Born on April 9th, 1997 in Slovakia. I am a highly motivated person with a passion for programming and development. 
+                    <p>Born on April 9th, 1997. I am a highly motivated person with a passion for programming and development. 
                     I put lots of energy to learn new things and constantly improve in my performance. <br>
-                    I definitely like to face new challenges, think from a new perspective and work as a teamplayer.
+                    I definitely like to face new challenges, think from a new perspective, and work as a teamplayer.
                     My aim is to contribute to functional projects and work in a promising environment.
                     </p>
                     <ul>
@@ -68,7 +68,28 @@
                 </div>
             </div>
         </div>
-        <div class="image-section">
+        <div id="dev" class="dev-section">
+            <div class="dev-container container">
+                <h2>Development</h2>
+                <div class="informary">
+                    <p>
+                        I've been passionate about computers ever since I was a child. 
+                        As this domain remains as an essential part of our lives, I would like to be part of it's development. 
+                        I have taken several programming classes in college and I've put hundreds of hours into online courses and learning. 
+                        I believe this has given me all essential tools to pursue my career as front-end developer.
+                        My diploma thesis was devoted to analysis of aircraft parking during Covid-19. 
+                        For this purpose, I have written a Python script that filters fetched aircraft data  and formats them for further processing.
+                    </p>
+                    <h3>Certificates</h3>
+                    <h3>Front-End Engineer Career Path</h3>
+                    <p>
+                        This 300+ hours online course on Codecademy represents the ignition of my front-end path. 
+                        Here I learned the markups of HTML, CSS, Javascript, React and Redux complemented with UI and UX design.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="gallery" class="image-section">
             <div class="image-container container"> 
                 <div class="image-thumbnail" style="display: none" >
                     <img src="./img/profile.JPG" />
@@ -79,9 +100,6 @@
                 <span class="prev-arrow" onclick="plusSlides(-1)"><</span>
                 <span class="next-arrow" onclick="plusSlides(1)">></span>
             </div> 
-        </div>
-        <div class="dev-section">
-
         </div>
     </main>
     <script src="./app.js"></script>

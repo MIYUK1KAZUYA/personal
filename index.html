@@ -13,11 +13,12 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <nav class="navigation scroll-down">
             <div class="nav-container container">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
                     <li><a href="#">DEV</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -27,9 +28,10 @@
     <main>
         <div class="main-section">
             <div class="main-container container">
-                <div class="intro">
+                <img class="avatar fade" src="./img/background.JPG" />
+                <div class="intro fade">
                     <h2>This is</h2>
-                    <h1>MARTIN POSPISIL</h1>
+                    <h1>MARTIN <br> POSPISIL</h1>
                     <p>Welcome to my website. This project represents some skills I've learned during my learning path. Feel free to scroll down for more content.</p>
                     <div class="scroll-arrows">
                         <a href="#">
@@ -39,27 +41,50 @@
                         </a>
                     </div>
                 </div>
-                <div class="avatar-container">
-                    <img class="avatar" src="./img/5b33609ae43d9d574f5a17ab_lm.jpg" />
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="about-container container">
+                <h2>About me</h2>
+                <div class="about">
+                    <p>Born on April 9th, 1997 in Slovakia. I am a highly motivated person with a passion for programming and development. 
+                    I put lots of energy to learn new things and constantly improve in my performance. <br>
+                    I definitely like to face new challenges, think from a new perspective and work as a teamplayer.
+                    My aim is to contribute to functional projects and work in a promising environment.
+                    </p>
+                    <ul>
+                        <li>
+                            <p class="degree">Bachelor's degree</p>
+                            <p>Air Transport<br>- at -<br>Czech Technical University</p>  
+                        </li>
+                        <li>
+                            <p class="degree">Master's degree</p>
+                            <p>Air Traffic Control and Management<br>- at -<br>Czech Technical University</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="anime">
+                    <img class="ac" src="./img/aircraft.jpg" /></div>
                 </div>
             </div>
         </div>
-        <div class="image-section section">
-            <div class="image-container container">
-                <img class="image-slide" src="./img/2ccab2bc-e739-48e8-aa81-09ce111a93e8.JPG" style="display: none" />
-                <img class="image-slide" src="./img/IMG_2797.jpg" />
+        <div class="image-section">
+            <div class="image-container container"> 
+                <div class="image-thumbnail" style="display: none" >
+                    <img src="./img/profile.JPG" />
+                </div>
+                <div class="image-thumbnail">
+                    <img src="./img/IMG_2797.jpg" />
+                </div>
                 <span class="prev-arrow" onclick="plusSlides(-1)"><</span>
                 <span class="next-arrow" onclick="plusSlides(1)">></span>
             </div> 
         </div>
-        <div class="section">
-            
-        </div>
-        <div class="section">
+        <div class="dev-section">
 
         </div>
     </main>
-    <script src="./scroll.js"></script>
+    <script src="./app.js"></script>
     <script src="./imageslide.js"></script>
 </body>
 </html>

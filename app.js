@@ -1,7 +1,18 @@
+const avatar = document.querySelector(".avatar");
+const intro = document.querySelector(".intro");
 const navigation = document.querySelector(".navigation");
-//const main = document.querySelector("main");
 const navHeight = document.querySelector(".navigation").offsetHeight;
-//main.style.top = navHeight + "px";
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    avatar.classList.remove('fade');
+    setTimeout(() => {
+    navigation.classList.remove('scroll-down');
+    intro.classList.remove('fade');
+  }, 500);
+  }, 600);
+}); 
+
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
   let currentScroll = window.pageYOffset;

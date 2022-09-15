@@ -9,12 +9,12 @@
 
 .navigation {
     position: fixed;
-    height: 100px;
+    height: 80px;
     top: 0px;
     width: 100%;
-    transition: all 200ms ease;
+    transition: all 500ms ease;
     opacity: 1;
-    z-index: 200;
+    z-index: 100;
 }
 
 .container {
@@ -22,6 +22,7 @@
     margin: 0 auto;
     display: flex;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .nav-container {
@@ -35,7 +36,7 @@
     gap: 60px;
     list-style: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .navigation a {
@@ -66,30 +67,36 @@
 }
 
 .navigation.scroll-up {
-    transition: opacity .5s; 
     opacity: 1;
 }    
 
 .navigation.scroll-down{
-    transition: opacity .5s; 
     opacity: 0;
 }
 
 .main-section {
-    padding-top: 100px;
+    margin: 20vh 0 20vh 0;
     height: auto;
 }
 
 .main-container {
-    justify-content: center;
-    margin: 100px auto;
-    display: flex;
+    position: relative;
     height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .main-container h1 {
-    font-size: 70px;
-    
+    margin-top: 20px;
+    font-size: 5rem;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.main-container h2 {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 .main-container h1:hover {
@@ -98,37 +105,138 @@
 }
 
 .main-container p {
+    position: relative;
+    margin-top: 30px;
     font-size: larger;
-    width: 80%;
-    margin: 20px 0px;
+    width: 50%;
+    left: 25%;
+    background-color: transparent;
+    color: rgb(143, 146, 148);
 }
 
 .intro {
-    position: relative;
-    width: 50%;
-    height: auto;
+    position: absolute;
+    width: 100%;
     overflow: hidden;
     padding-top: 80px;
+    background-color: transparent;
+    transition: ease-in-out 1s;
+    top: 0px;
 }
 
-.avatar-container {
-    width: 50%;
+.intro.fade {
+    top: 80px;
+    opacity: 0;
 }
 
 .avatar {
     width: 100%;
     height: 100%;
+    opacity: 0.1;
+    transition: opacity linear .5s;
+}
+
+.avatar.fade {
+    opacity: 0.8;
+    
+}
+
+.about-section {
+    margin: 20vh 0;
+}
+
+.about-container h2 {   
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.about-container h2:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0px; 
+    background-color: white;
+	left: 0;
+    right: 0;
+}
+
+.about {
+    width: 50%;
+    padding-right: 2vw;
+    font-size: 20px;
+    text-align: justify;
+    z-index: 1;
+}
+
+.about ul {
+    list-style: none
+}
+
+.about li {
+    margin: 30px 0;
+}
+
+.about .degree {
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.about .degree:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0; 
+    background-color: cyan;
+}
+
+.anime {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ac {
+    width: 100%;;
+}
+
+.image-section {
+    margin: 20vh 0;
+    height: auto;
 }
 
 .image-container {
+    height: 700px;
+    width: 100%;
     position: relative;
-    padding: 20px;
     border: 1px solid white;
+    align-items: center;
+    overflow: hidden;
 }
 
-.image-slide {
+.image-thumbnail {
+    position: relative;
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.image-thumbnail img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .prev-arrow,
@@ -138,11 +246,15 @@
     top: 50%;   
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
+}
+
+.prev-arrow {
+    left: 15px;
 }
 
 .next-arrow {
-    right: 10px;
+    right: 15px;
 }
 
 @keyframes goNext {
@@ -174,8 +286,8 @@
 
 .scroll-arrows {
     position: relative;
-    z-index: 200;
     margin-top: 50px;
+    background-color: transparent;
 }
 
 .scroll-arrows img {    
@@ -205,7 +317,6 @@
 	animation-delay:0s;
 }
 
-.section {
-    height: 500px;
-    margin: 50px;
+.dev-section {
+    margin: 20vh 0;
 }

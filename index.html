@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Open+Sans:wght@300;400;500&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Open+Sans:wght@300;400;500&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">     
     <title>The lair</title>
     <meta name="description" content="Martin's personal website">
 </head>
@@ -20,7 +20,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#dev">DEVELOPMENT</a></li>
                     <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,7 +47,7 @@
             <div class="about-container container">
                 <h2>About me</h2>
                 <div class="about">
-                    <p>Born on April 9th, 1997. I am a highly motivated person with a passion for programming and development. 
+                    <p><span class="color">Born</span> on April 9th, 1997. I am a highly motivated person with a passion for programming and development. 
                     I put lots of energy to learn new things and constantly improve in my performance. <br>
                     I definitely like to face new challenges, think from a new perspective, and work as a teamplayer.
                     My aim is to contribute to functional projects and work in a promising environment.
@@ -55,11 +55,11 @@
                     <ul>
                         <li>
                             <p class="degree">Bachelor's degree</p>
-                            <p>Air Transport<br>- at -<br>Czech Technical University</p>  
+                            <p>Air Transport<br><span class="color">-</span> at <span class="color">-</span><br>Czech Technical University</p>  
                         </li>
                         <li>
                             <p class="degree">Master's degree</p>
-                            <p>Air Traffic Control and Management<br>- at -<br>Czech Technical University</p>
+                            <p>Air Traffic Control and Management<br><span class="color">-</span class="color"> at <span class="color">-</span><br>Czech Technical University</p>
                         </li>
                     </ul>
                 </div>
@@ -80,12 +80,48 @@
                         My diploma thesis was devoted to analysis of aircraft parking during Covid-19. 
                         For this purpose, I have written a Python script that filters fetched aircraft data  and formats them for further processing.
                     </p>
-                    <h3>Certificates</h3>
-                    <h3>Front-End Engineer Career Path</h3>
-                    <p>
-                        This 300+ hours online course on Codecademy represents the ignition of my front-end path. 
-                        Here I learned the markups of HTML, CSS, Javascript, React and Redux complemented with UI and UX design.
-                    </p>
+                </div>
+                <h3>Certificates</h3>
+                <div class="text-area">
+                    <div class="text-box">
+                        <h4>Front-End Engineer Career Path</h4>
+                        <p>
+                            This 300+ hours online course on Codecademy represents the ignition of my front-end path. 
+                            Here I learned the markups of HTML, CSS, Javascript, React and Redux complemented with UI and UX design.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h4>Computer Science Career Path</h4>
+                        <p>
+                            This complex course on Codecademy introduced fundamental methods of programming, essential Data Structures and Algorithms,
+                            Databases and mathematics of computer science.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h4>Modern React with Redux</h4>
+                        <p>
+                            This course on Udemy represents modern tools to build dynamic web apps using React and Redux. Part of this course 
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h4>The Complete Python Pro Bootcamp for 2022</h4>
+                        <p>
+                            Automation, game, app and web development, data science and machine learning using Python. Learned to use Python for data science and machine learning.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h4>Learn JavaScript Course</h4>
+                        <p>
+                            Programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <h4>Intermediate JavaScript Course</h4>
+                        <p>
+                            Deeper understanding of how JavaScript runs in the browser including currying, hoisting, and concurrency. 
+                            Classes, modules and asynchronous functions.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,6 +136,11 @@
                 <span class="prev-arrow" onclick="plusSlides(-1)"><</span>
                 <span class="next-arrow" onclick="plusSlides(1)">></span>
             </div> 
+        </div>
+        <div id="contact" class="contact-section">
+            <p>GET IN TOUCH:</p>
+            <p><a href="mailto:matezz@icloud.com">matezz@icloud.com</a></p>
+            <p><a href="https://github.com/MIYUK1KAZUYA" target="_blank">GITHUB</a></p>
         </div>
     </main>
     <script src="./app.js"></script>

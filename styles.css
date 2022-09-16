@@ -13,7 +13,11 @@ html {
 body {
     font-size: 14px;
     font-family: 'Quicksand', 'Open Sans', 'Barlow', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
 }
 
 .navigation {
@@ -122,7 +126,7 @@ body {
     position: absolute;
     content: '';
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0px; 
     background-color: white;
 	left: 0;
@@ -194,7 +198,7 @@ body {
     position: absolute;
     content: '';
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0px; 
     background-color: rgb(255, 3, 99);
     bottom: 0;
@@ -214,7 +218,7 @@ body {
 }
 
 .about-container .about p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.3em;
 }
@@ -224,14 +228,13 @@ body {
 }
 
 .about-container .about .degree {
-    
     font-size: 2em;
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    text-shadow: 2px -2px 2px rgba(255, 255, 255, 0.1);
 }
 
 .about-container .about .degree:after {
@@ -275,23 +278,42 @@ body {
     position: absolute;
     content: '';
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0px; 
     background-color: rgb(255, 3, 99);
 	left: 0;
     right: 0;
 }
 
-.dev-container .informary {
-    font-size: 1.3em;
-    line-height: 1.5em;
+.dev-container .informary, .dev-container .text-area {
     width: 100%;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    flex-wrap: wrap;
     text-align: justify;
     overflow: hidden;
 }
 
+.dev-container > h3 {
+    display: inline-block;
+    width: 100%;
+    padding: 3em 0;
+    font-size: 1.2em;
+    color: rgb(156, 1, 61);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dev-container .text-area .text-box {
+    width: 33.3%;
+    font-size: 1rem;
+    padding: 0px 20px 40px 20px;
+}
+
 .image-section {
-    padding: 6rem 0;
+    padding: 6rem 0 3rem 0;
     height: auto;
 }
 
@@ -299,7 +321,8 @@ body {
     height: 700px;
     width: 100%;
     position: relative;
-    border: 1px solid rgb(255, 3, 99);
+    border-top: 2px solid rgb(255, 3, 99);
+    border-bottom: 2px solid rgb(255, 3, 99);
     align-items: center;
     overflow: hidden;
 }
@@ -317,6 +340,23 @@ body {
     max-width: 100%;
     object-fit: cover;
     display: block;
+}
+
+.contact-section {
+    display: flex;
+    padding: 0 10vw;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.contact-section > p {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
 }
 
 .prev-arrow,
@@ -395,4 +435,8 @@ body {
 
 .scroll-arrows img.a3 {	
 	animation-delay:0s;
+}
+
+.color {
+    color: rgb(255, 3, 99);
 }

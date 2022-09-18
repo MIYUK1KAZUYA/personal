@@ -30,6 +30,12 @@ a:link, a:visited, a:hover, a:active {
     z-index: 100;
 }
 
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -92,6 +98,13 @@ a:link, a:visited, a:hover, a:active {
     margin: 160px 0 0 0;
     padding: 0 0 6rem 0;
     height: auto;
+}   
+
+@media only screen and (max-width: 600px) {
+    .main-section {
+        margin: 80px 0 0 0; 
+        padding: 0 0 3rem 0;
+    }
 }
 
 .main-container {
@@ -104,7 +117,7 @@ a:link, a:visited, a:hover, a:active {
 .main-container h1 {
     position: relative;
     margin-top: 20px;
-    font-size: 5rem;
+    font-size: 6em;
     background-color: transparent;
     display: inline-block;
     font-family: 'Barlow', 'Open Sans', 'Quicksand', sans-serif;
@@ -136,7 +149,7 @@ a:link, a:visited, a:hover, a:active {
 .main-container h2 {
     background-color: transparent;
     font-family: 'Quicksand', 'Open Sans', 'Barlow', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2em;
     font-weight: 300;
 }
 
@@ -153,12 +166,18 @@ a:link, a:visited, a:hover, a:active {
 
 .main-container .intro {
     position: absolute;
-    width: 100%;
+    width: 100%; 
     overflow: hidden;
     padding-top: 80px;
     background-color: transparent;
     transition: ease-in-out 1s;
     top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container .intro {
+        font-size: 2.5vw;
+    }
 }
 
 .main-container .intro.fade {
@@ -167,8 +186,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .main-container .avatar {
-    width: 100%;
-    height: 100%;
+    height: 666px;
+    overflow: hidden;
+    object-fit: cover;
     opacity: 0.1;
     transition: opacity linear .5s;
 }
@@ -176,6 +196,12 @@ a:link, a:visited, a:hover, a:active {
 .main-container .avatar.fade {
     opacity: 0.8;
     
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container .avatar {
+        height: 550px;
+    }
 }
 
 .about-section {
@@ -187,7 +213,7 @@ a:link, a:visited, a:hover, a:active {
     margin-bottom: 2rem;
     padding-bottom: 10px;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3.5em;
     font-family: 'Barlow', 'Open Sans', 'Quicksand', sans-serif;
     letter-spacing: 2px;
     width: 100%;
@@ -213,6 +239,30 @@ a:link, a:visited, a:hover, a:active {
     padding-right: 1vw;
     text-align: justify;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-section {
+        padding: 3rem 0;
+    }
+
+    .about-container .about {
+        width: 100%;
+        padding: 0 3vw;
+    }
+
+    .about-container .about ul {
+        margin: 0 auto;
+    }
+
+    .about-container .about li {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .about-container h2 {
+        font-size: 3em;
+    }
 }
 
 .about-container .about ul {
@@ -258,6 +308,14 @@ a:link, a:visited, a:hover, a:active {
 
 .about-container .anime .ac {
     width: 100%;;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container .anime {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
 }
 
 .about-container .about.active {
@@ -306,6 +364,21 @@ a:link, a:visited, a:hover, a:active {
 	left: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .dev-section {
+        padding: 3rem 0;
+    }
+
+    .dev-container .informary {
+        width: 100%;
+        padding: 0 3vw;
+    }
+
+    .dev-container h2 {
+        font-size: 3em;
+    }
+}
+
 .dev-container .informary, .dev-container .text-area {
     width: 100%;
     display: flex;
@@ -336,6 +409,12 @@ a:link, a:visited, a:hover, a:active {
 .dev-container .text-area.active {
     animation: fade-bottom 0.8s ease-in;
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .dev-container .text-area .text-box {
+        width: 100%;
+    }
 }
 
 @keyframes fade-bottom {
@@ -379,6 +458,20 @@ a:link, a:visited, a:hover, a:active {
     display: block;
 }
 
+@media only screen and (max-width: 600px) {
+    .image-section {
+        padding: 0;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .image-thumbnail img {
+        height: 500px;
+    }
+}
+
 .contact-section {
     display: flex;
     padding: 0 10vw;
@@ -387,7 +480,6 @@ a:link, a:visited, a:hover, a:active {
     align-items: center;
     justify-content: space-around;
 }
-
 
 .contact-section > p {
     font-size: 1em;
